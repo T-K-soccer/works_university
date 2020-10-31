@@ -1,0 +1,310 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  background-image: url(images/white-4621828_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #3b3b3b;
+  font-family: Hiragino Kaku Gothic Std;
+  scroll-behavior: smooth;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  color: #3b3b3b;
+  text-decoration: none;
+}
+#header {
+  position: fixed;
+  width: 200px;
+  /* width: 20%; */
+  height: 100vh;
+  border-right: 6px solid #753523;
+}
+#header ul {
+  text-align: center;
+  margin-top: 40vh;
+}
+#header li {
+  font-size: 35px;
+}
+#header li a:hover {
+  color: #753523;
+}
+#main {
+  margin-left: 200px;
+}
+#works .wrapper {
+  margin: 0 70px;
+}
+.heading {
+  font-size: 35px;
+  padding: 50px 0;
+  font-style: italic;
+}
+.title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+#works .item-container .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+}
+.item-container .item {
+  display: inline-block;
+  width: 490px;
+  height: 270px;
+  margin-top: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: all 0.7s;
+}
+.item-container .item:hover {
+  opacity: 0.8;
+}
+.item-container .img-wrapper {
+  height: 230px;
+  overflow: hidden;
+}
+.item-container .item img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  transition: all 0.7s;
+}
+.item-container .item:hover img {
+  transform: scale(1.1, 1.1);
+}
+.item-container .main-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: all 0.7s;
+}
+.item-container .main-item:hover {
+  opacity: 0.8;
+}
+.item-container .main-item .img-wrapper {
+  overflow: hidden;
+  height: 100%;
+  background-color: #fefefe;
+}
+.item-container .main-item:hover img {
+  transform: scale(1.1, 1.1);
+}
+.item-container .main-item img {
+  transition: all 0.7s;
+  width: 100%;
+}
+.item-container .main-item p {
+  margin-top: -3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.item-container p {
+  /* z-index: 10; */
+  text-align: center;
+  background-color: #fefefe;
+  height: 40px;
+  line-height: 40px;
+}
+.explain {
+  padding: 30px 0;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+.explain .item {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+.sub-heading {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+}
+.sub-heading::after {
+  position: absolute;
+  right: 0;
+  content: ":";
+}
+.txt-content {
+  display: inline-block;
+  width: calc(100% - 100px);
+  /* margin-left: 20px; */
+  padding-left: 15px;
+}
+
+@media screen and (max-width: 896px) {
+  #header {
+    width: 100%;
+    height: 60px;
+    background-color: #fefefe;
+    z-index: 10;
+    border: none;
+  }
+  #header ul {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  #header li {
+    line-height: 60px;
+  }
+  .heading {
+    padding-top: 120px;
+  }
+  #main {
+    margin: 0;
+  }
+  .item-container .main-item {
+    display: inline-block;
+    max-width: 490px;
+    height: 270px;
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.7s;
+  }
+  .item-container .main-item img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    transition: all 0.7s;
+  }
+}
