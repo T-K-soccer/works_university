@@ -269,7 +269,11 @@ a {
   /* margin-left: 20px; */
   padding-left: 15px;
 }
-
+#copy-right {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 70px;
+}
 @media screen and (max-width: 896px) {
   #header {
     width: 100%;
@@ -306,5 +310,25 @@ a {
     height: 230px;
     object-fit: cover;
     transition: all 0.7s;
+  }
+}
+@media screen and (max-width: 480px) {
+  body {
+    background-size: contain;
+  }
+  #header li {
+    font-size: 25px;
+  }
+  #works .wrapper {
+    margin: 0 15px;
+  }
+  .explain .item {
+    display: block;
+    margin-bottom: 1em;
+  }
+  .txt-content {
+    display: block;
+    width: 100%;
+    padding: 0;
   }
 }
